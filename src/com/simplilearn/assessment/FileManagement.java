@@ -22,6 +22,8 @@ public class FileManagement {
 		
 		File[] arrayFiles = file.listFiles();
 				
+		// if statement to display by ascending order
+		
 		if (end < arrayFiles.length) {
 			Arrays.sort(arrayFiles, new Comparator<File>() {
 	            
@@ -53,6 +55,7 @@ public class FileManagement {
 		}
 	}
 	
+	// Add file method
 	public void addFile(String fileName) {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Insert the directory that you want to add the new file:");
@@ -67,6 +70,7 @@ public class FileManagement {
 		}
 	}
 	
+	// Delete file method
 	public boolean deleteFile(String fileName) {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Insert the directory that you want to delete the file:");
@@ -81,6 +85,7 @@ public class FileManagement {
 		}
 	}
 	
+	// Search for a file method
 	public boolean searchFile(String fileName) {
 		boolean existingFile = false;
 		Scanner s = new Scanner(System.in);

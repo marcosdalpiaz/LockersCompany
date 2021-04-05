@@ -11,7 +11,7 @@ public class Menu {
 		System.out.println("\n\n### Welcome to LockedMe.com ###\n### Company Lockers Pvt. Ltd. software. ###\n### Developed by Marcos Varallo ###");
 		menuFiles();
 	}
-	
+	// Menu functionalities
 	private void menuFiles() {
 		
 		int option = 0;
@@ -59,10 +59,12 @@ public class Menu {
 		
 	}
 	
+	// Method to list the files inside the directory
 	public void listFiles() {
 		fm.listFiles();
 	}
 	
+	// Method to add a new file
 	public void addFileOperation() {
 		shortcut = new Scanner(System.in);
 		System.out.println("Inform the name of the new file file that you want to add:");
@@ -73,6 +75,7 @@ public class Menu {
 		fm.addFile(file);
 	}
 	
+	// Method to delete a file
 	public void deleteFileOperation() {
 		shortcut = new Scanner(System.in);
 		System.out.println("Inform the name of the new file file that you want to delete:");
@@ -83,6 +86,7 @@ public class Menu {
 		fm.deleteFile(file);
 	}
 	
+	// Method to search for a file
 	public void searchFileOperation() {
 		shortcut = new Scanner(System.in);
 		System.out.println("Inform the name of the to be searched:");
